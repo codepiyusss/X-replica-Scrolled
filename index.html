@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolled</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span class="logocenter">𝕊</span>
+        </div>
+    </div>
+    <div class="wallcontainer">
+        <div class="profilecard">
+            <div class="profilecardhead"></div>
+            <div class="profilecardimagediv">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile">
+            </div>
+            <div class="profilecardnameidcont">
+                <div class="profilecardnamecont">
+                    <span id="profilecardname">Scrolled User</span>
+                </div>
+                <div id="profilecarduid">@scrolleduser</div>
+            </div>
+        </div>
+        <div class="tweetcontainer">
+            <div class="tweetbox">
+                <textarea id="tweetInput" placeholder="What's happening?" maxlength="280"></textarea>
+                <div class="tweetcontrols">
+                    <span id="charCount">280</span>
+                    <button id="tweetButton">Tweet</button>
+                </div>
+            </div>
+            <div id="timeline">
+                <!-- Sample tweets -->
+                <div class="tweet">
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Ministry of External Affairs</span>
+                        <span class="tweet-author-handle">@MEAIndia</span>
+                    </div>
+                    <p class="tweet-text">India strongly condemns the Pahalgam terror attack. Operation Sindoor was a precise strike against terrorist infrastructure in Pakistan & PoK. We urge the international community to hold Pakistan accountable. #IndiaStandsStrong</p>
+                    <span class="tweet-time">May 7, 2025 · 10:30 AM</span>
+                </div>
+                <div class="tweet">
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Indian Army</span>
+                        <span class="tweet-author-handle">@adgpi</span>
+                    </div>
+                    <p class="tweet-text">Operation Sindoor: Justice served. Indian forces conducted targeted strikes on 9 terror sites, neutralizing threats to our nation. Our resolve to protect India remains unshaken. Jai Hind! 🇮🇳</p>
+                    <span class="tweet-time">May 7, 2025 · 12:15 PM</span>
+                </div>
+                <div class="tweet">
+                    <div class="tweet-author">
+                        <span class="tweet-author-name">Prime Minister of India</span>
+                        <span class="tweet-author-handle">@PMOIndia</span>
+                    </div>
+                    <p class="tweet-text">Monitored Operation Sindoor overnight. Our brave forces have sent a clear message: India will not tolerate terrorism. We remain committed to peace but will respond decisively to threats. #BharatEkta</p>
+                    <span class="tweet-time">May 8, 2025 · 8:45 AM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

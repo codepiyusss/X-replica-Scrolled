@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.topbar {
+    background-color: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: 46px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logocenter {
+    font-size: 28px;
+    margin-top: 9px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.wallcontainer {
+    width: 900px;
+    margin: 60px auto 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.profilecard {
+    width: 290px;
+    background: #000;
+    margin: 10px;
+    position: relative;
+}
+
+.profilecardhead {
+    background-color: #1da1f2;
+    height: 95px;
+}
+
+.profilecardimagediv {
+    margin: -30px 0 0 8px;
+    padding: 1px;
+    background: #000;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.profilecardimagediv img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.profilecardnameidcont {
+    position: absolute;
+    top: 103px;
+    left: 90px;
+    width: 185px;
+}
+
+.profilecardnamecont {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+#profilecarduid {
+    color: #657786;
+    font-size: 14px;
+}
+
+.tweetcontainer {
+    width: 600px;
+    margin: 10px;
+}
+
+.tweetbox {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+#tweetInput {
+    width: 100%;
+    background: #000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+    height: 60px;
+}
+
+#tweetInput:focus {
+    outline: none;
+}
+
+.tweetcontrols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#charCount {
+    color: #657786;
+    font-size: 14px;
+}
+
+#tweetButton {
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#tweetButton:disabled {
+    background-color: #4a8ac0;
+    cursor: not-allowed;
+}
+
+.tweet {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+}
+
+.tweet-author {
+    display: flex;
+    align-items: center;
+}
+
+.tweet-author-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.tweet-author-handle {
+    color: #657786;
+    font-size: 14px;
+}
+
+.tweet-text {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.tweet-time {
+    color: #657786;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .wallcontainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profilecard, .tweetcontainer {
+        width: 90%;
+    }
+}
